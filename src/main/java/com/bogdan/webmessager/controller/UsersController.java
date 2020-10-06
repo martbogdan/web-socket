@@ -2,6 +2,7 @@ package com.bogdan.webmessager.controller;
 
 import com.bogdan.webmessager.storage.UserStorage;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
@@ -9,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.Set;
 
 @RestController
+@CrossOrigin
 public class UsersController {
 
     @GetMapping("/registration/{userName}")
